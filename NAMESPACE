@@ -1,0 +1,30 @@
+import(VineCopula)
+importFrom("bnlearn", "hc", "dsep", "score", "vstructs")
+importFrom("doParallel", "registerDoParallel")
+importFrom("foreach", "%dopar%", "foreach")
+importFrom("parallel", "makeCluster", "stopCluster", "detectCores", "parApply", "parLapply", "clusterExport", "parSapply")
+importFrom("igraph", "graph_from_adjacency_matrix", "is_separator", "components", "delete_vertices", "are_adjacent")
+importFrom("glmnet", "glmnet", "cv.glmnet")
+import(Matrix)
+importFrom("huge", "huge.npn", "huge", "huge.select")
+import(copula)
+importFrom("VineCopulaDAGCpp", "finalizeMatrixOuter")
+
+export(RVineCopSelectSparse)
+
+export(RVineDAGSelect)
+export(checkNecCondDAG)
+
+export(LassoSelect)
+export(RVineLassoSelect)
+export(calcStartOrdering)
+export(getStructureLambda)
+export(getStructureLambdaK)
+
+export(RVineGraphSelect)
+export(RVineClusterSelect)
+export(getClusterMetrics)
+
+useDynLib("VineCopulaHD")
+
+exportPattern("^[[:alpha:]]+")

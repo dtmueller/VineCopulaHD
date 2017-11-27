@@ -1,0 +1,11 @@
+Package: VineCopulaHD
+Type: Package
+Title: Several Methods To Estimate High Dimensional Vine Copulas
+Version: 0.1.0
+Author: Dominik Mueller
+Author: Dominik Mueller (dominik.mueller@mytum.de)
+Description: Vine Copulas are very flexible statistical models and are basis of the package VineCopula. However, they become quite complex in higher dimensions (d > 50). This package 
+    uses methods from graphical models and univariate model selection to estimate high dimensional vine copula structures and sparsity patterns.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
