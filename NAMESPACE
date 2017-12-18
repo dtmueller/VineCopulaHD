@@ -6,9 +6,9 @@ importFrom("parallel", "makeCluster", "stopCluster", "detectCores", "parApply", 
 importFrom("igraph", "graph_from_adjacency_matrix", "is_separator", "components", "delete_vertices", "are_adjacent")
 importFrom("glmnet", "glmnet", "cv.glmnet")
 import(Matrix)
-importFrom("huge", "huge.npn", "huge", "huge.select")
+# importFrom("huge", "huge.npn", "huge", "huge.select")
 import(copula)
-importFrom("VineCopulaDAGCpp", "finalizeMatrixOuter")
+# importFrom("VineCopulaDAGCpp", "finalizeMatrixOuter")
 
 export(RVineCopSelectSparse)
 
@@ -21,9 +21,9 @@ export(calcStartOrdering)
 export(getStructureLambda)
 export(getStructureLambdaK)
 
-export(RVineGraphSelect)
-export(RVineClusterSelect)
-export(getClusterMetrics)
+# export(RVineGraphSelect)
+# export(RVineClusterSelect)
+# export(getClusterMetrics)
 
 useDynLib("VineCopulaHD")
 
